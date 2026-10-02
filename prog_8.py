@@ -1,6 +1,5 @@
 #Q8. Write a Python program to accept three sides of a triangle, determine whether they form a valid triangle, and if valid, classify it as Equilateral, Isosceles, or Scalene.
 
-
 a = float(input("Enter first side: "))
 b = float(input("Enter second side: "))
 c = float(input("Enter third side: "))
@@ -20,4 +19,3 @@ if a + b > c and b + c > a and a + c > b:
 
 else:
     print("Invalid Triangle")
-
