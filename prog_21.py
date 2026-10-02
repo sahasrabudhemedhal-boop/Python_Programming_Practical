@@ -1,18 +1,14 @@
-#Q22 Write a Python program to accept an integer and determine whether it is a prime number using a `for` loop.
+# Q21 Write a Python program to implement a number guessing game in which the user repeatedly enters guesses until the correct number is found. Display whether each guess is too high or too low.
+correct = 50
 
-num = int(input("Enter an integer: "))
+guess = int(input("Guess the number: "))
 
-if num < 2:
-    print("Not a Prime Number")
-else:
-    prime = True
-
-    for i in range(2, num):
-        if num % i == 0:
-            prime = False
-            break
-
-    if prime:
-        print("Prime Number")
+while guess != correct:
+    if guess > correct:
+        print("Too High")
     else:
-        print("Not a Prime Number")
+        print("Too Low")
+
+    guess = int(input("Guess again: "))
+
+print("Correct Guess!")
