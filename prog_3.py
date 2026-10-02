@@ -1,22 +1,13 @@
 #Write a Python program to accept the number of electricity units consumed by a consumer and calculate the electricity bill according to different consumption slabs.
 
-# Accept time duration in seconds
-total_seconds = int(input("Enter time duration in seconds: "))
+units=int(input("Enter units consumed:"))
 
-# Calculate hours
-hours = total_seconds // 3600
+if units<100:
+  bill=units*5
 
-# Calculate remaining seconds
-remaining_seconds = total_seconds % 3600
+elif units<200:
+  bill=units*7
 
-# Calculate minutes
-minutes = remaining_seconds // 60
-
-# Calculate remaining seconds
-seconds = remaining_seconds % 60
-
-# Display the result
-print("Hours =", hours)
-print("Minutes =", minutes)
-print("Seconds =", seconds)
-```
+else:
+  bill=units*10
+print("Electricity bill is:",bill)
